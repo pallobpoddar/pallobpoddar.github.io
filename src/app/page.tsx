@@ -1,28 +1,16 @@
-import Image from "next/image";
+import Header from "@/components/header/Header";
+import Intro from "@/components/intro/Intro";
+import About from "@/components/about/About";
 
-export default function Home() {
+const Home = () => {
 	return (
-		<header>
-			<nav className="flex">
-				<ul className="flex gap-2">
-					<li>
-						<span className="text-aquamarine">01.&nbsp;</span>About
-					</li>
-					<li>
-						<span className="text-aquamarine">02.&nbsp;</span>
-						Experience
-					</li>
-					<li>
-						<span className="text-aquamarine">03.&nbsp;</span>
-						Projects
-					</li>
-					<li>
-						<span className="text-aquamarine">04.&nbsp;</span>
-						Contact
-					</li>
-				</ul>
-				<button>Resume</button>
-			</nav>
-		</header>
+		<>
+			<main className="px-6 sm:px-10 lg:px-28">
+				<Intro />
+				<About />
+			</main>
+		</>
 	);
-}
+};
+
+export default Home;

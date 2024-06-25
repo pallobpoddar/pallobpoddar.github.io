@@ -1,22 +1,27 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
 	title: "Pallob Poddar",
 	description: "Pallob Poddar portfolio website",
 };
 
-export default function RootLayout({
+const RootLayout = ({
 	children,
 }: Readonly<{
 	children: React.ReactNode;
-}>) {
+}>) => {
 	return (
 		<html lang="en">
-			<body className={inter.className}>{children}</body>
+			<head>
+				<link
+					href="https://db.onlinewebfonts.com/c/a78cfad3beb089a6ce86d4e280fa270b?family=Calibri"
+					rel="stylesheet"
+				/>
+			</head>
+			<body>{children}</body>
 		</html>
 	);
-}
+};
+
+export default RootLayout;
