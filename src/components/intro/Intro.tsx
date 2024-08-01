@@ -1,35 +1,34 @@
 import React from "react";
+import Button from "../buttons/Button";
 
 const Intro = () => {
-	return (
-		<section className="my-20">
-			<p className="font-mono text-aquamarine text-2xs mb-2 ml-1">
-				Hello, this is
-			</p>
-			<h1 className="font-sans text-hawkes-blue text-2xl font-semibold leading-tight sm:text-[60px] lg:text-[80px]">
-				Pallob Poddar.
-			</h1>
-			<h2 className="font-sans text-manatee text-2xl font-semibold mb-2.5 leading-tight sm:text-[60px] lg:text-[80px]">
-				I love exploring new things!
-			</h2>
-			<div className="my-10 max-w-md font-sans text-manatee text-base">
-				<p className="mb-4">
-					I&apos;m a Computer Science & Engineering graduate from
-					North South University. Primarily interested in Web
-					Development.
-				</p>
-				<p className="mb-4">
-					I enjoy learning new skills and implementing them in real
-					life!
-				</p>
-			</div>
-			<a href="https://www.linkedin.com/in/pallobpoddar/" target="_blank">
-				<button className="border border-solid border-aquamarine rounded py-5 px-7 text-aquamarine text-xs font-mono leading-none">
-					Get In Touch
-				</button>
-			</a>
-		</section>
-	);
+  return (
+    <section className="pt-32 pb-20 mx-auto flex flex-col justify-center max-w-screen-lg min-h-screen md:pt-0 md:pb-0">
+      <p className="font-mono text-aquamarine text-2xs mb-4 ml-1 lg:text-xs">
+        Hello, this is
+      </p>
+      <h1 className="font-sans font-semibold text-hawkes-blue text-2xl leading-none sm:text-[60px] lg:text-[80px]">
+        Pallob Poddar.
+      </h1>
+      <h2 className="font-sans font-semibold text-manatee text-2xl leading-none sm:text-[60px] lg:text-[80px]">
+        I create my own destiny!
+      </h2>
+      <div className="mt-6 mb-14 max-w-md font-sans text-manatee text-base">
+        <p className="mb-3">
+          I&apos;m a full-stack web developer, proficient in MERN stack. My
+          current interest lies in Next.js and Tailwind CSS. I&apos;m learning
+          Japanese at present.
+        </p>
+        <p>
+          I find immense joy by solving complex problems. Sky is the limit for
+          me.
+        </p>
+      </div>
+      <a href="mailto:pallobpoddar@gmail.com" target="_blank">
+        <Button text="Get In Touch" />
+      </a>
+    </section>
+  );
 };
 
 export default Intro;
